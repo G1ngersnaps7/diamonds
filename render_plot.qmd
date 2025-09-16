@@ -1,0 +1,16 @@
+---
+title: "render_plot"
+format: html
+editor: visual
+---
+
+## Date
+
+Today: `r Sys.time()`\`
+
+```{r}
+library(ggplot2)
+
+ggplot(diamonds) + 
+  geom_point(aes(x=carat, y = price, color = cut))
+```
